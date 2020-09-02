@@ -1,24 +1,55 @@
-.header {
+body {
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    background: #00adb5;
+}
+
+.header {
+    margin: none;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     color: white;
     background: #222831;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__unordenedList {
+    display: flex;
+}
+
+.header__unordenedList li {
+    list-style: none;
 }
 
 .header a {
     color: white;
     text-decoration: none;
+    padding: 20px;
 }
 
 .header a:hover  {
     color: white;
     text-decoration: underline;
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero__image {
-    width: 500px;
+    margin: 10px;
+    width: 450px;
 }
 
 .hero__title {
+    width: 500px;
+    margin: 10px;
+    padding: 30px 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
 }
@@ -28,20 +59,104 @@
 }
 
 .sectionPrincipal {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+    background: #393e46;
+    /* border-bottom-right-radius: 50px; */
+}
+
+.sectionPrincipal__proyect {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionPrincipal__text {
+    width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: honeydew;
+    font-size: 30px;
+}
+
+.sectionPrincipal__images {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionPrincipal__screens {
+    width: 300px;
+}
+
+.sectionPrincipal__idioms {
+    width: 300px;
+}
+
+.sectionPrincipal__granAltillo {
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
     border: 1px solid grey;
     border-bottom-right-radius: 50px;
+    background: #eeeeee;
+    display: flex;
+    justify-content: space-between;
 }
 
-.sectionPrincipal__text{
+.sectionPrincipal__juegos {
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid grey;
+    border-bottom-right-radius: 50px;
+    background: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionPrincipal__transporte {
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid grey;
+    border-bottom-right-radius: 50px;
+    background: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionPrincipal__div--text {
     width: 600px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 30px;
+    color: #000000;
 }
 
-.sectionPrincipal_pantallas{
-    width: 500px;
+.contacto {
+    font-size: 24px;
+    padding: 30px;
+    background: #eeeeee;
 }
 
-.sectionPrincipal_lenguajes{
-    width: 500px;
+.contacto__logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto__logos--figure {
+    margin: 20px;
+    padding: 10px;
+}
+
+.footer {
+    height: 160px;
+    margin: none;
+    padding: 20px;
+    background: #222831;
+    color: honeydew;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
