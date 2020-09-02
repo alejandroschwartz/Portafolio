@@ -1,0 +1,47 @@
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: #222831;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover  {
+    color: white;
+    text-decoration: underline;
+}
+
+.hero__image {
+    width: 500px;
+}
+
+.hero__title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.hero__title strong {
+    color: rgb(17, 17, 144);
+}
+
+.sectionPrincipal {
+    border: 1px solid grey;
+    border-bottom-right-radius: 50px;
+}
+
+.sectionPrincipal__text{
+    width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.sectionPrincipal_pantallas{
+    width: 500px;
+}
+
+.sectionPrincipal_lenguajes{
+    width: 500px;
+}
