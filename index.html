@@ -3,86 +3,104 @@
     <head>
         <meta charset="UTF-8" /> 
         <title>Alejandro Schwartz</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
        <header class="header">
-           <figure class="header__figure">
-               <img class="header__figure--logo" src="" alt="logo de portada">
-           </figure>
-           <ul class="header__unordenedList">
-               <li class="header__unordenedlist--list"><a href="#">Inicio</a></li>
-               <li class="header__unordenedlist--list"><a href="#Proyectos">Proyectos</a></li>
-               <li class="header__unordenedlist--list"><a href="#Contacto">Contacto</a></li>
-           </ul>
+           <div class="header__container">
+               <figure class="header__figure">
+                   <img class="header__figure--logo" src="" alt="logo de portada">
+               </figure>
+               <ul class="header__unordenedList">
+                   <li class="header__unordenedlist--list"><a href="#">Inicio</a></li>
+                   <li class="header__unordenedlist--list"><a href="#Proyectos">Proyectos</a></li>
+                   <li class="header__unordenedlist--list"><a href="#Contacto">Contacto</a></li>
+               </ul>    
+           </div>
        </header>
-       <section class="hero">
-           <h1 class="hero__title">Hola, soy <strong>Alejandro Schwartz</strong><br /> y este es mi portafolio de proyectos.<br /> </h1>
-           <figure class="hero__image">
-               <img src="images/Foto_Alejandro.jpg" height="300" alt="Imagen para la sección principal" />
-           </figure>
-       </section>
-       <section class="sectionPrincipal" id="Proyectos">
-           <article class="sectionPrincipal__proyect">
-                <p class="sectionPrincipal__text">
-                    <strong>Proyectos personales</strong><br /><br />
-                    Para la realizacion de esta pagina aplique mis conocimiento de <strong>HTML5</strong>, de <strong>CSS3</strong> utilizando un preprocesador como <strong>SASS</strong> y tambien <strong>JavaScript</strong>. Fui guardando dentro de mi repositorio local de <strong>Git</strong> para luego subirlo a mi repositorio virtual en <strong>GitHub</strong>.
-                </p> <br />
-                <figure class="sectionPrincipal__images">
-                    <img class="sectionPrincipal__screens" src="images/pantallas.jpg" alt="Imagen de pantallas" />
-                    <img class="sectionPrincipal__idioms" src="images/lenguajes.png" alt="Imagen de Lenguajes" />
-                </figure>
-            </article>
-           <article class="sectionPrincipal__granAltillo">
-               <div class="sectionPrincipal__div--text">
-                   <h3>Gran Altillo - muebles antiguos</h3>
-                   <p>Se dedica a compra, venta y restauración de muebles antiguos de estilo desde el año 2001.</p>
+       <div class="hero__container">
+           <section class="hero">
+               <h1 class="hero__title">Hola, soy <strong>Alejandro Schwartz</strong><br /> y este es mi portafolio de proyectos.<br /> </h1>
+               <figure class="hero__figure">
+                   <img class="hero__figure--image" src="images/Foto_Alejandro.jpg" alt="Imagen para la sección principal" />
+               </figure>
+           </section>
+           <section class="sectionPrincipal" id="Proyectos">
+               <article class="sectionPrincipal__proyect">
+                    <p class="sectionPrincipal__text">
+                        <strong>Proyectos personales</strong><br /><br />
+                        Para la realizacion de esta pagina aplique mis conocimiento de <strong>HTML5</strong>, de <strong>CSS3</strong> utilizando un preprocesador como <strong>SASS</strong> y tambien <strong>JavaScript</strong>. Fui guardando dentro de mi repositorio local de <strong>Git</strong> para luego subirlo a mi repositorio virtual en <strong>GitHub</strong>.
+                    </p> <br />
+                    <figure class="sectionPrincipal__images">
+                        <img class="sectionPrincipal__screens" src="images/pantallas.jpg" alt="Imagen de pantallas" />
+                        <img class="sectionPrincipal__idioms" src="images/lenguajes.png" alt="Imagen de Lenguajes" />
+                    </figure>
+                </article>
+                <h2 class="sectionPrincipal__experience">
+                    Sobre mi experiencia!
+                </h2>
+                <div class="sectionPrincipal__container">
+                    <article class="sectionPrincipal__article">
+                        <figure class="sectionPrincipal__image">
+                            <img src="images/gran_altillo.png" width="550" alt="Foto del Gran ALtillo muebles antiguos">
+                        </figure>
+                        <div class="sectionPrincipal__div--text">
+                            <h3>Gran Altillo - Muebles antiguos</h3>
+                            <p>Se dedica a compra, venta y restauración de muebles antiguos de estilo desde el año 2001.</p>
+                            <li class="sectionPrincipal__ver"><a href="#">Ver mas!</a></li>
+                         </div>
+                    </article>
+                    <article class="sectionPrincipal__article">
+                        <figure class="sectionPrincipal__image">
+                            <img src="images/juegos_azar.png" width="550" alt="Foto juegos de azar">
+                        </figure>
+                        <div class="sectionPrincipal__div--text">
+                            <h3>Juegos de azar</h3>
+                            <p>Para jugar con el azar. Utilice conocimiento de JavaScript para crear eventos aleatorios de diversos juegos.</p>
+                            <li class="sectionPrincipal__ver"><a href="#">Ver mas!</a></li>
+                        </div>
+                     </article>
+                     <article class="sectionPrincipal__article">
+                         <figure class="sectionPrincipal__image">
+                             <img src="images/transporte_ale.png" width="550" alt="Foto transporte ale">
+                         </figure>
+                         <div class="sectionPrincipal__div--text">
+                             <h3>Transporte Ale</h3>
+                             <p>Se dedica al transporte de cargas dentro de la provincias con un servicio puerta a puerta.</p>
+                             <li class="sectionPrincipal__ver"><a href="#">Ver mas!</a></li>
+                         </div>
+                     </article>
                 </div>
-               <figure class="sectionPrincipal__granAltillo--image">
-                   <img src="images/gran_altillo.png" width="300" alt="Foto del Gran ALtillo muebles antiguos">
+           </section>
+       </div>
+       <section class="contact" id="Contacto">
+           <div class="contact__text">
+               <h3>¿Creamos algo juntos?</h3>
+               <p>Contactame por los siguientes medios.</p> <br />
+           </div>
+           <div class="contact__logos">
+               <figure class="contact__logos--figure" >
+                   <img src="images/facebook.png" width="80" alt="Logo facebook">
                </figure>
-           </article>
-           <article class="sectionPrincipal__juegos">
-               <div class="sectionPrincipal__div--text">
-                   <h3>Juegos de azar</h3>
-                   <p>Para jugar con el azar. Utilice conocimiento de JavaScript para crear eventos aleatorios de diversos juegos.</p>
-               </div>
-               <figure class="sectionPrincipal__juegos--image">
-                   <img src="images/juegos_azar.png" width="300" alt="Foto juegos de azar">
+               <figure class="contact__logos--figure">
+                   <img src="images/instagram.png" width="80" alt="Logo instagram">
                </figure>
-            </article>
-            <article class="sectionPrincipal__transporte">
-                <div class="sectionPrincipal__div--text">
-                    <h3>Transporte Ale</h3>
-                    <p>Se dedica al transporte de cargas dentro de la provincias con un servicio puerta a puerta.</p>
-                </div>
-                <figure class="sectionPrincipal__transporte--image">
-                    <img src="images/transporte_ale.png" width="300" alt="Foto transporte ale">
-                </figure>
-            </article>
-       </section>
-       <section class="contacto" id="Contacto">
-           <h3>Contactame</h3> <br />
-           <p>Esta es la sección de contactos</p> <br />
-           <div class="contacto__logos">
-               <figure class="contacto__logos--figure" >
-                   <img src="images/facebook.png" width="90" alt="Logo facebook">
-                   <p>Facebook:</p> <br />
+               <figure class="contact__logos--figure">
+                   <img src="images/twitter.png" width="80" alt="Logo twitter">
                </figure>
-               <figure class="contacto__logos--figure">
-                   <img src="images/instagram.png" width="90" alt="Logo instagram">
-                   <p>Instagram:</p> <br />
-               </figure>
-               <figure class="contacto__logos--figure">
-                   <img src="images/twitter.png" width="90" alt="Logo twitter">
-                   <p>Twitter:</p> <br />
+               <figure class="contact__logos--figure">
+                   <img src="images/github.png" width="80" alt="Logo github">
                </figure>
            </div>
        </section>
        <footer class="footer">
-           <p>Pie de pagina</p>
-           <p>Diseñado por:</p>
-           <p>Alejandro Matías <strong>Schwartz</strong></p>
+           <div class="footer__div">
+               <p class="footer__div--p">Diseño de página: <br />
+               Alejandro Matías <strong>Schwartz</strong> <br />
+               Ciudad de Córdoba, <strong>Argentina</strong>
+               </p>    
+           </div>
        </footer> 
     </body>
 </html>
