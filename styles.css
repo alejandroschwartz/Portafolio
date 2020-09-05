@@ -149,6 +149,10 @@ body {
     width: 1200px;
     display: flex;
     justify-content: space-between;
+
+    -webkit-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.2);
 }
 
 .sectionPrincipal__proyect--images {
@@ -171,6 +175,10 @@ body {
     object-fit: cover; /* Para que la imagencubra las medidas anteriores pero a la vez mantenga sus proporciones */
     display: flex;
     flex-direction: column;
+
+    -webkit-box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.15);
+    box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.15);
 }
 
 .sectionPrincipal__screens {
@@ -207,6 +215,10 @@ body {
     /* justify-content: center; */
     /* flex-shrink: 0; */
     overflow: hidden; /* Lo utilizo para que loe elementos hijos que desborden la medida de este objeto padre quedden ocultos. En este caso los bordes de la foto que salen del border-radius. */ 
+
+    -webkit-box-shadow: 0px 6px 8px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 6px 8px 4px rgba(0,0,0,0.2);
+    box-shadow: 0px 6px 8px 4px rgba(0,0,0,0.2);
 }
 
 .sectionPrincipal__div--text {
@@ -225,15 +237,19 @@ body {
     flex-direction: column;
     text-align: center;
     box-sizing: border-box;
+
+    -webkit-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.15);
+    box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.15);
 }
 
 
 .sectionPrincipal__ver a {
     margin: 20px;
     padding: 6px 30px;
-    border: 3px solid #00adb5;
+    border: 2px solid #00adb5;
     border-radius: 12px;
-    font-size: 16px;
+    font-size: 18px;
     color: #00adb5;
     text-decoration: none;
     background: #ffffff;
@@ -241,10 +257,10 @@ body {
     
 .sectionPrincipal__ver a:hover  {
     margin: 20px;
-    border: 3px solid #00adb5;
+    border: 2px solid #00adb5;
     border-radius: 12px;
     padding: 7px 31px;
-    font-size: 17px;
+    font-size: 19px;
     color: #00adb5;
     background: #ffffff;
 }
@@ -320,8 +336,6 @@ body {
 }
 
 .footer__div {
-    /* border: 2px solid red; */
-    
     box-sizing: border-box;
     padding: 20px;
     width: 1200px;
