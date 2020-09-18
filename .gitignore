@@ -1,0 +1,4 @@
+# Saco las imagenes de GitHub y las coloco por url a las paginas.
+*.png 
+*.jpg 
+*.svg 
