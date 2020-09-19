@@ -8,6 +8,26 @@ body {
     align-items: center; */
 }
 
+.icon__menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    border: 3px solid #000000;
+    background: rgba(224, 224, 224, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    left: 8px;
+    top: 8px;
+}
+
+.icon__menu img {
+    width: 20px;
+    height: 20px;
+}
+
 .header {
     margin: none;
     padding: none;
@@ -36,11 +56,11 @@ body {
     box-sizing: border-box;
 }
 
-.header__unordenedList {
+.header__ul {
     display: flex;
 }
 
-.header__unordenedList li {
+.header__ul li {
     list-style: none;
 }
 
@@ -161,7 +181,7 @@ body {
 }
 
 .sectionPrincipal__proyect--images {
-    height: 350px;
+    /* height: 350px; */
     width: 300px;
 }
 
@@ -386,38 +406,61 @@ body {
 }
 
 
-/* Media Queries */
+
+
+
+/*   Media Queries   */
+
+
+
 @media only screen and (max-width: 320px) {
-    .header__container {
-        height: 240px;
-        width: 320px;
+    
+    .icon__menu {
         display: flex;
-        flex-direction: column;
     }
 
-    .header__figure {
-        margin: 8px;
+    .header__div {
         justify-content: center;
     }
 
-    .header__unordenedList {
-        display: flex;
+    .header__container {
+        width: 320px;
+        justify-content: center;
+    }
+
+    .header__ul {
+        position: fixed;
+        background-color: rgba(105, 105, 105, 0.8);
+        z-index: 3;
+        top: 0;
+        left: -120vw;
+        width: 100vw;
+        bottom: 0;
         flex-direction: column;
-        height: 120px;
-        justify-content: space-between;
         align-items: center;
-        margin: 0px 0px 30px -30px;
+        justify-content: center;
+        transition: .3s;
     }
 
-    .header a {
-        padding: 8px 24px;
-        font-size: 20px;
-        border-radius: 8px;
+    .header__ul.is-active {
+        left: 0;
     }
 
-    .header a:hover  {
-        padding: 8px 24px;
-        border-radius: 8px;
+    .header__ul--list {
+        width: 260px;
+        margin: 14px;
+        padding: 4px;
+        border: 2px solid #ffffff;
+        border-radius: 6px;
+    }
+
+    .header__ul--list a {
+        padding: 8px 70px;
+    }
+
+    .header__ul--list a:hover {
+        background: none;
+        padding: 8px 70px;
     }
 
     .hero {
@@ -426,7 +469,6 @@ body {
         display: flex;
         justify-content: center;
         box-sizing: border-box;
-
         background-image: url('images/foto_portada.png');
         background-repeat: no-repeat;
         background-size: 200px;
@@ -549,34 +591,53 @@ body {
 }
 
 @media only screen and (min-width: 321px) and (max-width: 479px) {
-    .header__container {
-        height: 240px;
-        width: 320px;
-        flex-direction: column;
+
+    .icon__menu {
+        display: flex;
     }
 
-    .header__figure {
-        margin: 8px;
+    .header__div {
         justify-content: center;
     }
 
-    .header__unordenedList {
-        height: 100px;
+    .header__container {
+        width: 320px;
+        justify-content: center;
+    }
+
+    .header__ul {
+        position: fixed;
+        background-color: rgba(105, 105, 105, 0.8);
+        z-index: 3;
+        top: 0;
+        left: -120vw;
+        width: 100vw;
+        bottom: 0;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
-        margin: 0px 0px 30px -30px;
+        justify-content: center;
+        transition: .3s;
     }
 
-    .header a {
-        padding: 8px 24px;
-        font-size: 20px;
-        border-radius: 8px;
+    .header__ul.is-active {
+        left: 0;
     }
 
-    .header a:hover  {
-        padding: 8px 24px;
-        border-radius: 8px;
+    .header__ul--list {
+        width: 260px;
+        margin: 14px;
+        padding: 4px;
+        border: 2px solid #ffffff;
+        border-radius: 6px;
+    }
+
+    .header__ul--list a {
+        padding: 8px 70px;
+    }
+
+    .header__ul--list a:hover {
+        background: none;
+        padding: 8px 70px;
     }
 
     .hero {
@@ -585,8 +646,6 @@ body {
         display: flex;
         justify-content: center;
         box-sizing: border-box;
-
-
         background-image: url('images/foto_portada.png');
         background-repeat: no-repeat;
         background-size: 200px;
@@ -709,37 +768,55 @@ body {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .header__container {
-        height: 80px;
-        /* width: 480px; */
+
+    .icon__menu {
+        height: 50px;
+        width: 50px;
+        display: flex;
     }
 
-    .header__figure {
-        margin: 8px;
+    .header__div {
         justify-content: center;
     }
 
-    .header__figure--logo {
-        padding-top: 0px;
-        height: 50px;
+    .header__container {
+        width: 320px;
+        justify-content: center;
     }
 
-    .header__unordenedList {
-        height: 50px;
-        justify-content: space-between;
+    .header__ul {
+        position: fixed;
+        background-color: rgba(105, 105, 105, 0.8);
+        z-index: 3;
+        top: 0;
+        left: -120vw;
+        width: 100vw;
+        bottom: 0;
+        flex-direction: column;
         align-items: center;
-        margin: 0px 0px 0px 0px;;
+        justify-content: center;
+        transition: .3s;
     }
 
-    .header a {
-        font-size: 18px;
-        padding: 8px 12px;
-        border-radius: 8px;
+    .header__ul.is-active {
+        left: 0;
     }
 
-    .header a:hover  {
-        padding: 8px 18px;
-        border-radius: 8px;
+    .header__ul--list {
+        width: 260px;
+        margin: 14px;
+        padding: 4px;
+        border: 2px solid #ffffff;
+        border-radius: 6px;
+    }
+
+    .header__ul--list a {
+        padding: 8px 70px;
+    }
+
+    .header__ul--list a:hover {
+        background: none;
+        padding: 8px 70px;
     }
 
     .hero {
@@ -748,8 +825,6 @@ body {
         display: flex;
         justify-content: center;
         box-sizing: border-box;
-
-
         background-image: url('images/foto_portada.png');
         background-repeat: no-repeat;
         background-size: 200px;
@@ -778,20 +853,19 @@ body {
     }
 
     .sectionPrincipal__proyect {
-        width: 487px;
+        width: 90vw;
         padding: 20px;
         flex-direction: column;
     }
 
     .sectionPrincipal__proyect--images {
         flex-wrap: wrap;
-        width: 430px;
-        height: 160px;
+        width: 80vw;
         margin: 0px;
     }
 
     .sectionPrincipal__screens {
-        width: 200px;
+        width: 35vw;
     }
 
     .sectionPrincipal__idioms {
@@ -799,7 +873,7 @@ body {
     }
 
     .sectionPrincipal__text {
-        width: 440px;
+        width: 80vw;
         font-size: 16px;
     }
 
@@ -875,6 +949,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1140px) {
+
     .header__container {
         height: 90px;
         width: 760px;
@@ -885,7 +960,7 @@ body {
         justify-content: center;
     }
 
-    .header__unordenedList {
+    .header__ul {
         height: 80px;
         justify-content: space-between;
         align-items: center;
@@ -909,8 +984,6 @@ body {
         display: flex;
         justify-content: center;
         box-sizing: border-box;
-
-
         background-image: url('images/foto_portada.png');
         background-repeat: no-repeat;
         background-size: 200px;
