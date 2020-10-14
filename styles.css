@@ -1,11 +1,7 @@
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    /* background: #eeeeee; */
     background: #e2e2e2;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
 }
 
 .icon__menu {
@@ -34,21 +30,20 @@ body {
     background: #222831;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
 .header__figure--logo {
     padding-top: 10px;
-    height: 60px;
+    height: 50px;
 }
 
 .header__container {
     max-width: 1200px;
     width: 100%;
-    height: 90px;
+    height: 70px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 28px;
+    font-size: 24px;
     color: white;
     display: inherit;
     justify-content: space-between;
@@ -65,19 +60,20 @@ body {
 }
 
 .header a {
-    padding: 14px 26px;
+    margin: 6px 12px;
+    padding: 6px 12px;
     text-decoration: none;
     color: white;
     border-radius: 12px;
 }
 
 .header a:hover  {
-    padding: 14px 26px;
+    margin: 6px 12px;
+    padding: 6px 12px;
     color: white;
     background: #2d333d;
-    /*text-decoration: underline; */
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 .hero__container {
@@ -87,14 +83,10 @@ body {
 }
 
 .hero {
-    /* border: 2px solid red; */
-
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-
-
     background-image: url('https://i.imgur.com/3KMwE7Z.png');  /* images/foto_portada.png */
     background-repeat: no-repeat;
     background-size: 300px;
@@ -107,9 +99,7 @@ body {
 
 .hero__figure--image {
     height: 450px;
-    /* width: 600px; */
     margin: 0px;
-
     margin-right: 0px;
     margin-top: 0px;
 }
@@ -130,16 +120,11 @@ body {
 }
 
 .sectionPrincipal {
-    /* border: 2px solid red; */
-
     max-width: 1200px;
     margin: 15px;
     margin-top: -30px;
-    /* padding: 15px; */
-    /* background: #393e46; */
     background: #e2e2e2;
     position: relative;
-    /* border-bottom-right-radius: 50px; */
     box-sizing: border-box;
     list-style: none;
     display: flex;
@@ -148,15 +133,11 @@ body {
 }
 
 .sectionPrincipal__experience {
-    /* border: 2px solid red; */
-
     max-width: 1200px;
     display: flex;
 }
 
 .sectionPrincipal__experience--h2 {
-    /* border: 2px solid red; */
-
     padding-top: 80px;
     font-family: Geneva, Tahoma, sans-serif;
     font-size: 32px;
@@ -170,32 +151,29 @@ body {
     padding: 30px;
     background: #ffffff;
     box-sizing: border-box;
-
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-
     -webkit-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.2);
     box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.2);
 }
 
 .sectionPrincipal__proyect--images {
-    /* height: 350px; */
-    width: 300px;
+    margin: 0;
+    width: 38%;
 }
 
 .sectionPrincipal__text {
-    width: 600px;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    width: 55%;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 500;
     color: #000000;
 }
 
 .sectionPrincipal__screens {
-    width: 300px;
+    width: 100%;
 }
 
 .sectionPrincipal__idioms {
@@ -203,9 +181,6 @@ body {
 }
 
 .sectionPrincipal__image {
-    /* display: flex;
-    justify-content: flex-start; */
-    /* align-items: flex-start; */
     margin-top: -20px;
 }
 
@@ -215,8 +190,6 @@ body {
     object-fit: cover; /* Para que la imagencubra las medidas anteriores pero a la vez mantenga sus proporciones */
     display: flex;
     justify-content: flex-start;
-    /* flex-direction: column; */
-
     -webkit-box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.15);
     box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.15);
@@ -234,15 +207,12 @@ body {
     height: 550px;
     margin: 30px 0px;
     padding: 20px;
-    /* border: 1px solid grey; */
     border-radius: 16px;
     background: #f3fdff;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
-    /* justify-content: center; */
-    /* flex-shrink: 0; */
     overflow: hidden; /* Lo utilizo para que loe elementos hijos que desborden la medida de este objeto padre quedden ocultos. En este caso los bordes de la foto que salen del border-radius. */
 
     -webkit-box-shadow: 0px 6px 8px 4px rgba(0,0,0,0.2);
@@ -251,8 +221,6 @@ body {
 }
 
 .sectionPrincipal__div--text {
-    /* border: 2px solid red; */
-
     margin: 0px;
     margin-top: -150px;
     padding: 18px;
@@ -266,7 +234,6 @@ body {
     flex-direction: column;
     text-align: center;
     box-sizing: border-box;
-
     -webkit-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.15);
     box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.15);
@@ -308,7 +275,6 @@ body {
 
 .contact {
     font-size: 24px;
-    /* background: #eeeeee; */
     background: #393e46;
     display: flex;
     flex-direction: column;
@@ -316,11 +282,10 @@ body {
 }
 
 .contact__text {
-    /* border: 2px solid red; */
-
     color: #ffffff;
     box-sizing: border-box;
     max-width: 1200px;
+    margin-top: 60px;
     display: inherit;
     flex-direction: column;
     align-items: center;
@@ -339,18 +304,15 @@ body {
 }
 
 .contact__logos {
-    /* border: 2px solid red; */
-
     box-sizing: border-box;
     height: 150px;
     max-width: 1200px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: center;
 }
 
 .contact__logo--container {
-    /* border: 2px solid red; */
-
     box-sizing: border-box;
     height: 150px;
     width: 150px;
@@ -360,20 +322,14 @@ body {
 }
 
 .contact__logos--figure img {
-    /* border: 2px solid red; */
-
     height: 80px;
     width: 80px;
-    /* margin: 20px; */
     padding: 10px;
 }
 
 .contact__logos--figure img:hover {
-    /* border: 2px solid red; */
-
     height: 88px;
     width: 88px;
-    /* margin: 20px; */
     padding: 10px;
 }
 
@@ -412,7 +368,6 @@ body {
 /*   Media Queries   */
 
 
-
 @media only screen and (max-width: 320px) {
     
     .icon__menu {
@@ -447,14 +402,16 @@ body {
     }
 
     .header__ul--list {
-        width: 260px;
+        width: 200px;
         margin: 14px;
         padding: 4px;
         border: 2px solid #ffffff;
         border-radius: 6px;
+        background-color: rgba(0,0,0,0.3);
     }
 
     .header__ul--list a {
+        font-size: 16px;
         padding: 8px 70px;
     }
 
@@ -624,14 +581,16 @@ body {
     }
 
     .header__ul--list {
-        width: 260px;
+        width: 200px;
         margin: 14px;
         padding: 4px;
         border: 2px solid #ffffff;
         border-radius: 6px;
+        background-color: rgba(0,0,0,0.3);
     }
 
     .header__ul--list a {
+        font-size: 18px;
         padding: 8px 70px;
     }
 
@@ -857,15 +816,19 @@ body {
         padding: 20px;
         flex-direction: column;
     }
-
+    
     .sectionPrincipal__proyect--images {
-        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-wrap: wrap; */
         width: 80vw;
         margin: 0px;
     }
 
     .sectionPrincipal__screens {
-        width: 35vw;
+        width: 70vw;
+        max-width: 400px;
     }
 
     .sectionPrincipal__idioms {
@@ -951,7 +914,7 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1140px) {
 
     .header__container {
-        height: 90px;
+        height: 70px;
         width: 760px;
     }
 
@@ -968,13 +931,15 @@ body {
     }
 
     .header a {
-        font-size: 22px;
-        padding: 8px 16px;
+        font-size: 18px;
+        margin: 4px 8px;
+        padding: 4px 8px;
         border-radius: 8px;
     }
 
     .header a:hover  {
-        padding: 8px 16px;
+        margin: 4px 8px;
+        padding: 4px 8px;
         border-radius: 8px;
     }
 
@@ -1046,11 +1011,12 @@ body {
     }
 
     .sectionPrincipal__div--text p {
-        font-size: 16px;
+        font-size: 14px;
+        margin-bottom: 10px;
     }
 
     .sectionPrincipal__div--text h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .sectionPrincipal__ver a {
